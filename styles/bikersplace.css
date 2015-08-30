@@ -5,6 +5,14 @@
 			src: url(../fonts/Lovelo-Black.otf);
 		}
 
+@media only screen and (max-device-width: 800px) {
+    body {
+         background: url(../media/maxresdefault.jpg) #000 no-repeat center center fixed;
+    }
+    video#backgroundVideo {
+        display: none;
+    }
+}
 video#backgroundVideo {
    position: fixed;
     top: 50%;
