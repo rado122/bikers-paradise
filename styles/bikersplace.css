@@ -52,7 +52,7 @@ video#backgroundVideo {
 }
 #navMenu{
     text-align: center;
-    background: #2ecc71;
+    background: rgba(46, 204, 113,0.7);
     width: 100%;
     position:fixed;
     padding:0;
@@ -61,22 +61,21 @@ video#backgroundVideo {
     display: table;
     top:0;
     left:0;
-
 }
 
-a:link{
+ul#navMenu a:link{
     text-decoration: none;
     color:white;
 }
-a:visited{
+ul#navMenu a:visited{
     text-decoration: none;
     color:white;
 }
-a:hover{
+ul#navMenu a:hover{
     text-decoration: none;
     color:white;
 }
-a:focus{
+ul#navMenu a:focus{
     text-decoration: none;
     color:white;
 }
@@ -98,4 +97,53 @@ span#starpageText{
     max-width: 100%;
     width:100%;
     
+}
+
+#logRegBtns{
+    text-align: center;
+    width: 50%;
+    position:relative;
+    padding:0;
+    margin:0;
+    line-height:300%;
+    display: table;
+    left:25%;
+    border: 50px;
+    border-color: aqua;
+
+}
+
+#logRegBtns{
+    font-family: Lovelo-Black;
+    border: 20px;
+    
+}
+
+li#loginBtn{
+    display: table-cell;
+    background: rgba(46, 204, 113,0.7);
+    width: 50%;    
+}
+
+li#registerBtn{
+    display: table-cell;
+    background: rgba(231, 76, 60,0.7);
+    width: 50%;
+}
+
+ul#logRegBtns a:link{
+    text-decoration: none;
+    color:white;
+}
+ul#logRegBtns a:visited{
+    text-decoration: none;
+    color:white;
+}
+ul#logRegBtns a:hover{
+    text-decoration: none;
+    color:white;
+}
+ul#logRegBtnsu a:focus{
+    text-decoration: none;
+    color:white;
 }
