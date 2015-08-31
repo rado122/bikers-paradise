@@ -82,6 +82,20 @@ a:focus{
 }
 
 .sections{
-position: relative;
-    margin-top: 5%;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    position: fixed;
+    transform: translatey(-50%);
+    
+}
+
+span#starpageText{
+    color:white; 
+    font-family: Lovelo-Black;
+    font-size: 280%;
+    max-width: 100%;
+    width:100%;
+    
 }
