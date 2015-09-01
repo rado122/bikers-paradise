@@ -99,37 +99,38 @@ span#starpageText{
     
 }
 
-#logRegBtns{
+ul#logRegBtns{
     text-align: center;
     width: 50%;
     position:relative;
-    padding:0;
-    margin:0;
     line-height:300%;
-    display: table;
+    display: flex;
     left:25%;
-    border: 50px;
-    border-color: aqua;
-
-}
-
-#logRegBtns{
     font-family: Lovelo-Black;
-    
+
 }
+
+
 
 li#loginBtn{
-    display: table-cell;
+    display: inline-block;
     background: rgba(46, 204, 113,0.7);
-    width: 50%;    
+    width: 50%;
 }
+ul#logRegBtns li{
 
+}
 li#registerBtn{
-    display: table-cell;
+    display: inline-block;
     background: rgba(231, 76, 60,0.7);
     width: 50%;
 }
 
+ul#logRegBtns a{
+    display:block;
+    padding:0px;
+    margin:0px;
+}
 ul#logRegBtns a:link{
     text-decoration: none;
     color:white;
