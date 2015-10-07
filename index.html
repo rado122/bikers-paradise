@@ -2,38 +2,68 @@
 <html>
 
 <head lang="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="styles/bikersplace.css">
     <link rel="icon" href="favicon.ico">
     <title>Welcome to Bikers place</title>
 </head>
 
 <body>
-    <nav>
-        <ul id="navMenu">
-            <li><a href="/" class="navmenubuttons">HOME</a> </li>
-            <li><a href="#" class="navmenubuttons">NEWS</a> </li>
-            <li><a href="#" class="navmenubuttons">FORUM</a></li>
-            <li><a href="#" class="navmenubuttons">REGISTER</a></li>
-            <li><a href="#" class="navmenubuttons">LOGIN</a></li>
-        </ul>
-        <br>
+    <nav class="navbar navbar-default navbar-fixed-top">
+
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar-content" aria-expanded="false">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-content">
+            <ul class="nav navbar-nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">NEWS</a></li>
+                <li><a href="#">FORUM</a></li>
+                <li class=""><a href="#">REGISTER</a></li>
+                <li class="nav-right"><a href="#">LOGIN</a></li>
+            </ul>
+        </div>
     </nav>
-    <video id="backgroundVideo" autoplay muted>
-        <source src="media/Shinko%20Smokebomb%20Burnout.mp4" type="video/mp4" />
-    </video>
-    <img id="backgroundImg" src="media/maxresdefault.jpg" style="display: none">
-    <section class="sections">
-        <span id="starpageText">Place where you can find anything about your bike</span>
-        <ul id="logRegBtns">
-            <li id="loginBtn">
-            <a href="#">Login</a>
-            </li>
-            <li  id="registerBtn">
-            <a href="#">Register</a>
-            </li>
-        </ul>
-    </section>
+
+
+    <div id="background">
+        <video id="background-video" autoplay muted>
+            <source src="media/Shinko%20Smokebomb%20Burnout.mp4" type="video/mp4" />
+        </video>
+    </div>
+
+    <div class="container">
+        <div class="vertical-center-row">
+            <section class="sections">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <h1 id="starpageText" class="text-center">Place where you can find anything about your bike</h1>
+                        </div>
+                    </div>
+                    <div id="log-reg-btns" class="row">
+                        <div class="col-md-4 col-md-offset-2">
+                            <a href="#" class="btn btn-success btn-lg btn-block">Register</a>
+                        </div>
+                        <div class="col-md-4 ">
+                            <a href="#" class="btn btn-danger btn-lg btn-block">Login</a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 
 </html>

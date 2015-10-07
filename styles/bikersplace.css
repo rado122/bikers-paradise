@@ -1,149 +1,147 @@
-
-
 @font-face {
-			font-family: Lovelo-Black;
-			src: url(../fonts/Lovelo-Black.otf);
-		}
+    font-family: Lovelo-Black;
+    src: url(../fonts/Lovelo-Black.otf);
+}
 
-@media only screen and (max-device-width: 800px) {
-   
-    img#backgroundImg{
-    display:block!important;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+body {
+    font-family: Lovelo-Black;
+    padding-top: 70px;
+    font-size: 24px;
+}
+
+
+/*** Sections center ****/
+
+html,
+body,
+.container {
+    height: 100%;
+}
+
+.container {
+    display: table;
+    vertical-align: middle;
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+/*** END of Sections center ****/
+
+
+/**** h1 styles ***/
+
+h1 {
+    color: white;
+    font-size: 2em;
+}
+
+@media (max-width: 767px) {
+    h1 {
+        font-size: 1.5em;
     }
-    
-    video#backgroundVideo {
+}
+
+
+/****END of h1 styles****/
+
+
+/******** Navbar styles ******/
+
+.navbar {
+    background: rgba(46, 204, 113, 1.0);
+    border: none;
+}
+
+.navbar-nav li a:link {
+    color: white;
+}
+
+.navbar-nav li a:visited {
+    color: white;
+}
+
+.navbar-nav li a:hover {
+    color: black;
+}
+
+.navbar-nav li a:active {
+    color: black;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
+    border-width: medium;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+    background-color: rgba(46, 145, 113, 1.0);
+}
+
+
+/******** END of navbar styles ********/
+
+
+/****** Login and Register buttons styles********/
+
+#log-reg-btns .btn {
+    border-radius: 0px;
+}
+
+
+/*** END of Login and Register buttons styles ******/
+
+
+/**** Background styles ******/
+
+#background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+#background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #background-video {
+        height: 300%;
+        top: -100%;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #background-video {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+@media (max-width: 767px) {
+    #background {
+        background: url('../media/maxresdefault.jpg') center center / cover no-repeat;
+    }
+    #background-video {
         display: none;
     }
 }
-video#backgroundVideo {
-   position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    
-}
-
-#navMenu li{
-    font-family: Lovelo-Black;
-    display: inline;
-    font-size: 20px;
-    list-style-type: none;
-    margin-right: 5%;
-    color:white;
-    text-align: center;
-    vertical-align: middle; 
-    display: table-cell;
-}
-#navMenu{
-    text-align: center;
-    background: rgba(46, 204, 113,0.7);
-    width: 100%;
-    position:fixed;
-    padding:0;
-    margin:0;
-    height:7%;
-    display: table;
-    top:0;
-    left:0;
-}
-
-ul#navMenu a:link{
-    text-decoration: none;
-    color:white;
-}
-ul#navMenu a:visited{
-    text-decoration: none;
-    color:white;
-}
-ul#navMenu a:hover{
-    text-decoration: none;
-    color:white;
-}
-ul#navMenu a:focus{
-    text-decoration: none;
-    color:white;
-}
-
-.sections{
-    margin: auto;
-    width: 100%;
-    text-align: center;
-    top: 50%;
-    position: fixed;
-    transform: translatey(-50%);
-    
-}
-
-span#starpageText{
-    color:white; 
-    font-family: Lovelo-Black;
-    font-size: 280%;
-    max-width: 100%;
-    width:100%;
-    
-}
-
-ul#logRegBtns{
-    text-align: center;
-    width: 50%;
-    position:relative;
-    line-height:300%;
-    display: flex;
-    left:25%;
-    font-family: Lovelo-Black;
-
-}
 
 
-
-li#loginBtn{
-    display: inline-block;
-    background: rgba(46, 204, 113,0.7);
-    width: 50%;
-}
-ul#logRegBtns li{
-
-}
-li#registerBtn{
-    display: inline-block;
-    background: rgba(231, 76, 60,0.7);
-    width: 50%;
-}
-
-ul#logRegBtns a{
-    display:block;
-    padding:0px;
-    margin:0px;
-}
-ul#logRegBtns a:link{
-    text-decoration: none;
-    color:white;
-}
-ul#logRegBtns a:visited{
-    text-decoration: none;
-    color:white;
-}
-ul#logRegBtns a:hover{
-    text-decoration: none;
-    color:white;
-}
-ul#logRegBtnsu a:focus{
-    text-decoration: none;
-    color:white;
-}
+/*** End of background styles ***/
